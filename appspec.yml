@@ -11,4 +11,4 @@ hooks:
   ApplicationStart:
     - location: scripts/npm_start.sh
       runas: root
-      timeout: 30
+      timeout: 300
