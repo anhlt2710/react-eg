@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/www/html
+    destination: /var/www
 hooks:
   AfterInstall:
     - location: scripts/npm-install.sh
@@ -12,3 +12,5 @@ hooks:
     - location: scripts/npm-start.sh
       runas: root
       timeout: 300
+
+      wget https://aws-codedeploy-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/latest/install
